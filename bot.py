@@ -144,6 +144,5 @@ def startupClient(email, password):
 ### Reving up the engines ###
 if __name__ == "__main__":
     creds = config()
-    client = startupClient("sykesstudents@gmail.com", "ThisThingSucks008")
-    #client = startupClient(creds['email'], creds['password'])
+    client = startupClient(creds['email'], creds['password'])
     client.listen()
